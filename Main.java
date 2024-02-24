@@ -1,45 +1,55 @@
-class Animal {
-    String species;
-    String habitat;
+// // Parent class
+// class Animal {
+//     String species;
+//     String habitat;
 
-    public Animal(String species, String habitat) {
-        this.species = species;
-        this.habitat = habitat;
-    }
+//     Animal(String species, String habitat) {
+//         this.species = species;
+//         this.habitat = habitat;
+//     }
 
-    void eat() {
-        System.out.println(species + " is eating like normal");
-    }
+//     void sleep() {
+//         System.out.println(species + " is sleeping like a animal");
+//     }
 
-    void sleep() {
-        System.out.println(species + " is sleeping");
-    }
+//     void eat() {
+//         System.out.println(species + " is eating like a animal");
+//     }
+// }
 
-    void blood() {
-        System.out.println(species + " has blood");
-    }
-}
+// class Mammal extends Animal {
+//     int numberOfLegs;
+//     String sound;
 
-class Mammal extends Animal {
-    int numberOfLegs;
+//     Mammal(String species, String habitat, int numberOfLegs, String sound) {
+//         super(species, habitat);
+//         this.numberOfLegs = numberOfLegs;
+//         this.sound = sound;
+//     }
 
-    public Mammal(String species, String habitat, int numberOfLegs) {
-        super(species, habitat);
-        this.numberOfLegs = numberOfLegs;
-    }
-}
+//     void sleep() {
+//         System.out.println(species + " is sleeping like a mammal");
 
-public class Main {
-    public static void main(String[] args) {
+//     }
 
-        Mammal dog = new Mammal("Dog", "Ground", 4);
+//     void eat() {
+//         System.out.println(species + " eats dog food");
+//     }
+// }
 
-        System.out.println("Species: " + dog.species);
-        System.out.println("Habitat: " + dog.habitat);
-        System.out.println("Number of Legs: " + dog.numberOfLegs);
+// public class Main {
+//     public static void main(String[] args) {
+//         int a = 10;
+//         Mammal dog = new Mammal("Dog", "Land", 4, "Bark");
+//         dog.sleep();
+//         dog.eat();
+//         System.out.println(a += 10);
+//         System.out.println("Mammal:");
+//         System.out.println("Species: " + dog.species);
+//         System.out.println("Habitat: " + dog.habitat);
+//         System.out.println("Number of Legs: " + dog.numberOfLegs);
+//         System.out.println("Sound: " + dog.sound);
+//         System.out.println();
 
-        dog.eat();
-        dog.sleep();
-        dog.blood();
-    }
-}
+//     }
+// }
